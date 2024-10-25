@@ -1,0 +1,130 @@
+/* rgb(65 49 246); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.title { /* Logo FastLane.cx */
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.fastlane {
+    font-weight: 700; /* Bold */
+    font-style: italic; /* Italic */
+}
+
+.cx {
+    font-weight: 400; /* Normal */
+    font-style: italic; /* Italic */
+}
+
+.input-container { /* Caixa de Texto Whatsapp em cima do input */
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container label { /* Texto Whatsapp em cima do input */
+    position: absolute;
+    top: -7px; /* Posição acima da borda do input */
+    left: 35px; /* Ajuste horizontal */
+    background-color: #1c1c1c; /* Cor de fundo igual ao fundo da página */
+    padding: 0 5px; /* Padding para evitar corte do texto */
+    font-size: 12px;
+    color: #8c8c8c;
+}
+
+@keyframes confirm-border { /* Altera a cor ao confirmar telefone */
+    from {
+        border-color: #ffffff; /* Cor inicial */
+    }
+    to {
+        border-color: #3f50f6; /* Cor azul de confirmação */
+    }
+}
+
+#whatsapp-input { /* Caixa de input do telefone */
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 15px;
+    /* transition: border 0.1s ease; */
+    box-sizing: border-box; /* Garante que padding e borda estejam incluídos no tamanho total */
+    outline: none; /* Remove a borda de foco padrão */
+}
+
+#whatsapp-input::placeholder { /* Texto de exemplo telefone */
+    color: #8c8c8c;
+}
+
+#whatsapp-input:focus {
+    /* border-color: #3f50f6; Borda azul suave ao focar */
+    border-width: 1px; /* Mantém a mesma espessura para evitar mudanças de tamanho */
+}
+
+
+
+#whatsapp-input.input-complete {
+    border: 2px solid #3f50f6; /* Mantém a borda azul */
+    animation: confirm-border 0.5s ease forwards; /* Animação suave para mudar para azul */
+}
+
+.start-button {
+    width: 80%;
+    padding: 12px;
+    background-color:#4131f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.start-button.disabled {
+    background-color: #ffffff; /* Cinza para o estado inativo */
+    cursor: not-allowed; /* Muda o cursor para indicar que está desativado */
+    color :#1c1c1c;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info-text { /* Texto de aviso */
+    font-size: 11px;
+    width: 84%; /* Mesma largura do input-container */
+    color: #575454;
+    margin: 15px auto 0 auto; /* Centraliza horizontalmente */
+    line-height: 1.5;
+    text-align: justify; /* Centraliza o texto dentro da área */
+    padding-left: 0; /* Remove o padding à esquerda */
+    box-sizing: border-box;
+}
+
+/* Ensuring proper spacing and visibility on smaller devices */
+

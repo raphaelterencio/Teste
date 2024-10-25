@@ -1,0 +1,102 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+}
+.container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    text-align: center;
+    min-height: 60vh;
+}
+
+
+.logo-container {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.logo-image {
+    max-width: 250px;
+    height: auto;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+}
+
+.input-container label {
+    color: #808080;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: transparent;
+    border: 2px solid transparent; /* Começamos com borda transparente de 2px */
+    box-shadow: 0 0 0 1.5px #333; /* Isso cria uma "borda" visual de 1px */
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    box-sizing: border-box; /* Garante que padding e borda estejam incluídos no tamanho total */
+    outline: none; /* Remove a borda de foco padrão */
+    transition: border 0.3s ease; /* Animação suave para a transição de borda */
+}
+
+#whatsapp-input.input-complete {
+    border: 2px solid #3f50f6; /* Mantém a borda azul */
+    box-shadow: 0 0 0 0px #333; /* Desativa a "borda" visual de 1px */
+}
+
+.info-text {
+    color: #808080;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin: 1.5rem 0;
+    max-width: 400px;
+    text-align: left;
+}
+
+.start-button {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem;
+    background-color:#4131f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.start-button.disabled {
+    background-color: #d4cccc; /* Cinza para o estado inativo */
+    cursor: not-allowed; /* Muda o cursor para indicar que está desativado */
+    color :#000000;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
